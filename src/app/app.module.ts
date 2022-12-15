@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,8 @@ import { HomeComponent } from './component/views/home/home.component';
 import { ProductCrudComponent } from './component/views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,8 @@ import { ProductCreateComponent } from './component/product/product-create/produ
     MatCardModule,
     MatButtonModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
