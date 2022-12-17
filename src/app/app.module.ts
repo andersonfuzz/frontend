@@ -13,6 +13,8 @@ import { FooterComponent } from './component/template/footer/footer.component';
 import { NavComponent } from './component/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './component/views/home/home.component';
@@ -20,6 +22,7 @@ import { ProductCrudComponent } from './component/views/product-crud/product-cru
 import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductReadComponent } from './component/product/product-read/product-read.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProductCrudComponent,
     RedDirective,
     ProductCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MatSnackBarModule,
     HttpClientModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
