@@ -10,11 +10,11 @@ import { ProductService } from '../product.service';
 export class ProductReadComponent implements OnInit {
   constructor(private productService: ProductService) {}
   products!: Product[];
+  displayedColumns=['id','name','price','action']
   ngOnInit(): void {
     //metodo chamado quando o componete é inicializado
     this.productService.read().subscribe((products) => {
       this.products = products;
-      console.log(products);
     });
   }
 }
